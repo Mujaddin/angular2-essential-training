@@ -6,9 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['app/media-item-list.component.css']
 })
 export class MediaItemListComponent {
-
-  onMediaItemDelete(mediaItem) { }
-
+  selectedItem = null;
+  onMediaItemDelete(mediaItem) { console.log("deleted") }
+  onMediaItemPreview(mediaItem) {
+    this.selectedItem = mediaItem;
+  }
+  onPopup(mediaItem) {
+    this.selectedItem = null;
+  }
   mediaItems = [
     {
       id: 1,

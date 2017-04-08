@@ -1,0 +1,7 @@
+<div [hidden]="isExist()" id="PopupItem">
+  <h2>{{ mediaItem ? mediaItem.name :''}}</h2>
+  <div>Watched on {{ mediaItem ? mediaItem.watchedOn:'' }}</div>
+  <div>{{ mediaItem ? mediaItem.category:'' }}</div>
+  <div>{{ mediaItem ? mediaItem.year:'' }}</div>
+  <a class="closeButton" (click)="onClose()">Close</a>
+</div>
