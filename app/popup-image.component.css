@@ -1,0 +1,21 @@
+.button {
+
+    display: block;
+  background-color: #ec4342;
+  padding: 4px;
+  font-size: .8em;
+  border-radius: 4px;
+  color: #ffffff;
+  width:50px;
+  cursor: pointer;
+}
+.icon{
+  position:relative;
+
+  width: 70;
+  height: 70;
+}
+.is-image-hovering{
+width: 80;
+height: 80;
+}

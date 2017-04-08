@@ -8,7 +8,6 @@ import { FavoriteDirective } from './favorite.directive';
 import { CategoryListPipe } from './category-list.pipe';
 import { PopupComponent } from './popup.component';
 import { PopupImageComponent } from './popup-image.component';
-import { ImageDirective } from "./image.directive";
 @NgModule({
   imports: [
     BrowserModule
@@ -20,8 +19,7 @@ import { ImageDirective } from "./image.directive";
     FavoriteDirective,
     CategoryListPipe,
     PopupComponent,
-    PopupImageComponent,
-    ImageDirective
+    PopupImageComponent
   ],
   bootstrap: [
     AppComponent
