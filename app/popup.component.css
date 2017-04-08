@@ -2,8 +2,8 @@
   position: fixed;
   left:400px;
   top:30%;
-  width: 140px;
-  height: 250px;
+  width: 150px;
+  max-height: 320px;
   border: 2px solid;
   background-color: #29394b;
   padding: 10px;
@@ -15,7 +15,7 @@ h2 {
 }
 .closeButton {
   position: absolute;
-  bottom:0px;
+  top:0px;
   right:0px;
   display: block;
   background-color: #ec4342;

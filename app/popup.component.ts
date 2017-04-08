@@ -10,30 +10,30 @@ export class PopupComponent {
   notVisible = true;
   @Input() mediaItem;
   @Output() close = new EventEmitter();
-
+  index = 0;
   onClose() {
     this.close.emit(this.mediaItem);
   }
   isExist() {
     return this.mediaItem ? false : true;
   }
-//image try
-imageItems =[
+  //image try
+  imageItems = [
     {
       id: 1,
-      image:"./media/01.png"
+      image: "./media/firebug.png"
     },
     {
       id: 2,
-      image:"./media/03.png"
+      image: "./media/popup-02.png"
     },
     {
       id: 3,
-      image:"./media/02.png"
+      image: "./media/popup-03.png"
     },
     {
       id: 4,
-       image:"./media/04.png"
+      image: "./media/04.png"
     }]
   ;
 

@@ -1,6 +1,6 @@
 
 <div *ngFor="let image of imageItem;let x= index">
 <img [mwImage]="image.image" *ngIf="x==idx" src="{{image.image}}" class="icon" />
-</div><div>
-<a class="button" (click)="previous()">Previous</a>
-<a class="button" (click)="next()">Next</a></div>
+</div>
+<a class="button" (click)="previous()" id="buttonLeft">Previous</a>
+<a class="button" (click)="next()"id="buttonRight">Next</a>
