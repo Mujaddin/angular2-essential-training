@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { Validators, FormBuilder } from '@angular/forms';
-
+import { channelLists } from './providers'
 @Component({
   selector: 'mw-add-form',
   templateUrl: 'app/add-form.component.html',
@@ -27,17 +27,18 @@ export class AddFormComponent {
     })
   }
 
-  YearValidate(inputYear) {
-    if (inputYear.value.trim().length === 0) {
+  YearValidate(control) {
+    if (control.value.trim().length === 0) {
       return null;
     }
 
     var now = new Date();
     now.setFullYear(now.getFullYear() - 1);
 
-    let year = parseInt(inputYear.value);
+    let year = parseInt(control.value);
     let minYear = 1995;
-    let maxYear = now.toISOString().slice(0,4);
-}
+    let maxYear = now.toISOString().slice(0, 4);
+    console.log(maxYear);
+  }
 
 }

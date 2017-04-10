@@ -13,20 +13,22 @@
     <li>
       <label for="medium">Charge</label>
       <select name="medium" id="medium" formControlName="medium">
-      <option *ngFor="let charge of channelList.charges" value="{{charge}}">Charge</option>
+      <option *ngFor="let charge of channelLists.charges" value="{{charge}}">Charge</option>
     </select>
     </li>
     <li>
       <label for="format">Video Format</label>
-      <select name="format" id="format" formControlName="format">
-      <option *ngFor="Let format of channelList.formats" value="{{format}}">{{format}}</option>
+      <select name="formats" id="formats" formControlName="format">
+      <option *ngFor="Let format of channelLists.formats" value="{{format}}">{{format}}</option>
     </select>
     </li>
     <li>
       <label for="year">Year</label>
-      <input type="text" name="year" id="year" maxlength="4" formControlName="year">
+      <input type="text" name="year" id="year" formControlName="year">
       <div *ngIf="form.controls.year.errors?.year" class="error">
         Must be between {{form.controls.year.errors?.year.min}} and {{form.controls.year.errors?.year.max}}
       </div>
     </li>
   </ul>
+  <button type="submit" [disabled]="!form.valid">Add</button>
+</form>
