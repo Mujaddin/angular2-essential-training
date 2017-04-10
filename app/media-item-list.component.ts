@@ -17,44 +17,44 @@ export class MediaItemListComponent {
   mediaItems = [
     {
       id: 1,
-      name: "Firebug",
-      medium: "Series",
-      category: "Science Fiction",
+      name: "Youtube Sports",
+      medium: "free",
+      format: "Adobe Flash Player",
       year: 2010,
-      watchedOn: 1294166565384,
+      profile: "YouTube, the biggest video hosting site in the world, provides tons of interesting content online. And for free. You can also upload your own videos to share with the world.",
       isFavorite: false
     },
     {
       id: 2,
-      name: "The Small Tall",
-      medium: "Movies",
-      category: "Comedy",
-      year: 2015,
-      watchedOn: null,
-      isFavorite: true
+      name: "Yahoo Sports",
+      medium: "free",
+      format: "Adobe Flash Player",
+      year: 2010,
+      profile: "ind all the lastest sports news, scores, photoes and epsecially videos coming from different sources like NFL, NBA and also Yahoo Sports itself.",
+      isFavorite: false
     }, {
       id: 3,
-      name: "The Redemption",
-      medium: "Movies",
-      category: "Action",
-      year: 2016,
-      watchedOn: null,
+      name: "SL.com Vidoe",
+      medium: "free",
+      format: "Adobe Flash Player",
+      year: 2010,
+      profile: "SI.com is the best resource for breaking news, analysis of sports. You can also watch its big library of videos.",
       isFavorite: false
     }, {
       id: 4,
-      name: "Hoopers",
-      medium: "Series",
-      category: "Drama",
-      year: null,
-      watchedOn: null,
-      isFavorite: true
+      name: "ESPN video",
+      medium: "free",
+      format: "Adobe Flash Player",
+      year: 2010,
+      profile: "ESPN, as the worldwide leader in sports, provides a big amount of information, like news, scores and also videos for you to check the lastest matches.",
+      isFavorite: false
     }, {
       id: 5,
-      name: "Happy Joe: Cheery Road",
-      medium: "Movies",
-      category: "Action",
-      year: 2015,
-      watchedOn: 1457166565384,
+      name: "NDTV",
+      medium: "free",
+      format: "Adobe Flash Player",
+      year: 2010,
+      profile: "New Dehli TV or NDTV is a news channel based in India that also allows you to watch the latest sports video for free wherever you are in the world.",
       isFavorite: false
     }
   ];
