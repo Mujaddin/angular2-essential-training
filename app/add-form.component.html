@@ -1,0 +1,32 @@
+<header>
+  <h2>Add more channel for sports</h2>
+</header>
+<form [formGroup]="addform" (ngSubmit)="onSubmit(form.value)">
+  <ul>
+    <li>
+      <label for="name">Nama</label>
+      <input type="text" name="name" id="channel" formControlName="name">
+      <div *ngIf="form.controls.name.error?.pattern" class="error">
+        Name has invalid character
+      </div>
+    </li>
+    <li>
+      <label for="medium">Charge</label>
+      <select name="medium" id="medium" formControlName="medium">
+      <option *ngFor="let charge of channelList.charges" value="{{charge}}">Charge</option>
+    </select>
+    </li>
+    <li>
+      <label for="format">Video Format</label>
+      <select name="format" id="format" formControlName="format">
+      <option *ngFor="Let format of channelList.formats" value="{{format}}">{{format}}</option>
+    </select>
+    </li>
+    <li>
+      <label for="year">Year</label>
+      <input type="text" name="year" id="year" maxlength="4" formControlName="year">
+      <div *ngIf="form.controls.year.errors?.year" class="error">
+        Must be between {{form.controls.year.errors?.year.min}} and {{form.controls.year.errors?.year.max}}
+      </div>
+    </li>
+  </ul>
